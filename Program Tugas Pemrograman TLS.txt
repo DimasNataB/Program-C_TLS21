@@ -1,0 +1,36 @@
+//Tugas Pemrograman Dimas Nata Bharata Kelompok Octave
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    int satuan;
+    int meter, feet, inch, mile;
+    float val_in_feet, val_in_inch, val_in_mile;
+    
+    cout << "Apakah anda ingin mengubah meter ke kaki (0), inci (1), atau mil (2)? ";
+    cin >> satuan ;
+    cout << "Masukkan satuan dalam meter: ";
+    cin >> meter ;
+    
+    val_in_feet = meter * 3.28084;
+    val_in_inch = meter * 39.3701;
+    val_in_mile = meter * 0.000621371;
+    
+    if (satuan == 0) {
+        cout << meter << " meter sama dengan " << val_in_feet << " kaki";
+    }
+    
+    if (satuan == 1) {
+        cout << meter << " meter sama dengan " << val_in_inch << " inci";
+    }
+    
+    if (satuan == 2) {
+        cout << meter << " meter sama dengan " << val_in_mile << " mil";
+    }
+
+    return 0;
+}
